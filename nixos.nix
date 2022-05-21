@@ -395,6 +395,7 @@ in
             noCheck = true;
             options = [ "bind" ]
               ++ optional cfg.${persistentStoragePath}.hideMounts "x-gvfs-hide";
+            depends = [ persistentStoragePath ];
           };
         };
 
